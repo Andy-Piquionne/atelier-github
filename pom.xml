@@ -34,7 +34,7 @@
         <distributionManagement>
                 <repository>
                         <id>nexus</id>
-                        <url>http://ton-ip:8081/repository/spring-releases/</url>
+                        <url>https://unnational-elly-unflickeringly.ngrok-free.dev/repository/spring-releases/</url>
                 </repository>
         </distributionManagement>
 
