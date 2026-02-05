@@ -16,6 +16,7 @@
 
         <properties>
                 <java.version>17</java.version>
+                <sonar.projectKey>springboot-app</sonar.projectKey>
         </properties>
 
         <dependencies>
@@ -23,13 +24,19 @@
                         <groupId>org.springframework.boot</groupId>
                         <artifactId>spring-boot-starter-web</artifactId>
                 </dependency>
-
                 <dependency>
                         <groupId>org.springframework.boot</groupId>
                         <artifactId>spring-boot-starter-test</artifactId>
                         <scope>test</scope>
                 </dependency>
         </dependencies>
+
+        <distributionManagement>
+                <repository>
+                        <id>nexus</id>
+                        <url>http://ton-ip:8081/repository/spring-releases/</url>
+                </repository>
+        </distributionManagement>
 
         <build>
                 <plugins>
@@ -39,5 +46,4 @@
                         </plugin>
                 </plugins>
         </build>
-
 </project>
